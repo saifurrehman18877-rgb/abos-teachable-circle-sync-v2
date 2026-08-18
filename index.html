@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Circle Sync v2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #26A69A;
+            --primary-hover: #00897B;
+            --accent: #26A69A;
+            --background: #F5F5F5;
+            --surface: #FFFFFF;
+            --text-primary: #212121;
+            --text-muted: #757575;
+            --border: #E0E0E0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+        .btn-filled {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-filled:hover {
+            background-color: var(--primary-hover);
+        }
+        input, textarea {
+            border: 1px solid var(--border);
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            width: 100%;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            ring: 2px solid var(--primary);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-gray-900">Teachable Circle Sync v2</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                    <a href="pricing.html" class="text-gray-900 hover:text-gray-700">Pricing</a>
+                    <a href="app.html" class="btn btn-filled">Open App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <section class="bg-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">Stop guessing which students need encouragement — sync Teachable and Circle to find inactive learners automatically.</h1>
+                    <p class="mt-4 text-lg text-gray-600">Every week, you manually cross-reference Teachable and Circle to find students who haven't logged in and aren't in your 'needs-encouragement' space. That's tedious. Teachable Circle Sync v2 does it in seconds: paste your exports, set a threshold, and get a ready-to-reimport CSV of students who need a nudge.</p>
+                    <div class="mt-8">
+                        <a href="app.html" class="btn btn-filled">Try it now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-900">Features</h2>
+                </div>
+                <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-900">No more manual cross-referencing</h3>
+                        <p class="mt-2 text-gray-600">Paste your Teachable and Circle exports, and let the tool find students who haven't logged in and aren't already in your 'needs-encouragement' space.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-900">Set your own inactivity threshold</h3>
+                        <p class="mt-2 text-gray-600">Decide how many days of inactivity should trigger a nudge (e.g., 14 days). The tool will only flag students who haven't logged in within that window.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-900">Ready-to-reimport CSV</h3>
+                        <p class="mt-2 text-gray-600">Get a CSV with just the emails of students who need encouragement, formatted exactly for Circle's import tool. No extra steps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-900">How it works</h2>
+                </div>
+                <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-900">1. Paste or upload your Teachable and Circle exports</h3>
+                        <p class="mt-2 text-gray-600">Copy and paste your CSV exports from Teachable and Circle, or upload them directly. The tool handles the rest.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-900">2. Set your inactivity threshold</h3>
+                        <p class="mt-2 text-gray-600">Choose how many days of inactivity should trigger a nudge (e.g., 14 days). The tool will only flag students who haven't logged in within that window.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-900">3. Download your ready-to-reimport CSV</h3>
+                        <p class="mt-2 text-gray-600">Get a CSV with just the emails of students who need encouragement, formatted exactly for Circle's import tool. No extra steps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-900">Pricing</h2>
+                </div>
+                <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-900">Free</h3>
+                        <p class="mt-2 text-gray-600">$0</p>
+                        <ul class="mt-4 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Sync one Teachable and Circle export at a time</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Basic inactivity threshold</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">CSV output for manual reimport</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="pricing.html" class="btn btn-filled">Try it free</a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border-2 border-green-500">
+                        <h3 class="text-xl font-bold text-gray-900">Pro</h3>
+                        <p class="mt-2 text-gray-600">$19/mo</p>
+                        <ul class="mt-4 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Sync unlimited Teachable and Circle exports</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Advanced inactivity threshold</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Automated reimport to Circle (via manual CSV upload)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">Priority support</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="pricing.html" class="btn btn-filled">Get Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-900">FAQ</h2>
+                </div>
+                <div class="mt-8 space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">Does this tool work with other platforms besides Teachable and Circle?</h3>
+                        <p class="mt-2 text-gray-600">No, this tool is specifically designed to work with Teachable and Circle. We're exploring integrations with other platforms in the future.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">How often should I run this tool?</h3>
+                        <p class="mt-2 text-gray-600">We recommend running this tool at least once a week, or whenever you notice a spike in student churn.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">Can I automate this tool?</h3>
+                        <p class="mt-2 text-gray-600">No, this tool is static and does not support automation. However, you can set up a recurring task to run the tool manually.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold">Teachable Circle Sync v2</h3>
+                    <p class="mt-2 text-gray-400">Stop guessing which students need encouragement — sync Teachable and Circle to find inactive learners automatically.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="app.html" class="text-gray-400 hover:text-white">Open App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Contact</h3>
+                    <p class="mt-2 text-gray-400">Email: support@teachablecirclesync.com</p>
+                    <p class="mt-2 text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Teachable Circle Sync v2. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
